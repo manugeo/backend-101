@@ -1,0 +1,11 @@
+{
+  "name": "backend-101",
+  "version": "1.0.0",
+  "description": "A base backend application to kick start all other applications. Node.js (Express) application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manu Thomas",
+  "license": "ISC"
+}
