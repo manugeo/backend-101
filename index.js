@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+require('dotenv').config();
 
 const app = express();
 app.use(express.json());
@@ -8,8 +9,8 @@ morgan.token("custom", ":method :url :status :res[content-length] - :response-ti
 app.use(morgan('custom'));
 
 app.get('/', (req, res) => {
-  res.send("Hey there! This is Back-end 101.");
+  res.send("Boom Boom Boom!");
 });
 
-const PORT = 3001;
+const PORT = process.env.PORT;
 app.listen(PORT, () => console.log("App running on port 3001"));
